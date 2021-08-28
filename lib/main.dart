@@ -28,6 +28,10 @@ class MyHome extends StatelessWidget {
       ),
       body:Center(
         child: Wrap(
+          direction: Axis.vertical,
+          alignment: WrapAlignment.end,
+          spacing: 10.0,
+          runSpacing: 20.0,
               children: [
                 Container(
                   width: 200,
@@ -156,9 +160,8 @@ class MyHome extends StatelessWidget {
                   ),
                   alignment: Alignment.topLeft,
                   child: Center(
-                    child: Text("Eighth conatiner",
-                    style: TextStyle(fontSize: 20,
-                    fontWeight: FontWeight.bold),),
+                    child: Text("Eighth container",
+                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                   ),
                 ),
               ],
